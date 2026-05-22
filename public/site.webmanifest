@@ -1,0 +1,19 @@
+{
+  "name": "ISI Connect",
+  "short_name": "ISI Connect",
+  "description": "Digital campus for ISI Kef students.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity", "social"]
+}

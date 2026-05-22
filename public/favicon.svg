@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">ISI Connect</title>
+  <desc id="desc">Blue ISI Connect app icon</desc>
+  <defs>
+    <linearGradient id="g" x1="10" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#0f172a"/>
+  <path d="M18 18h28c6 0 10 4 10 10v8c0 6-4 10-10 10H31l-11 9v-9h-2c-6 0-10-4-10-10v-8c0-6 4-10 10-10Z" fill="url(#g)"/>
+  <path d="M19 30h26M19 38h17" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="47" cy="38" r="3" fill="#fff"/>
+</svg>
