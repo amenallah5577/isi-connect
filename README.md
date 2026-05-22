@@ -31,8 +31,8 @@ The publishable static output is generated in `dist/`.
 
 The public demo keeps admin access disabled by default.
 
-- Student demo: `Amen Jbali` / `student123`
-- Professor demo: `Aymen Louati` / `prof123`
+- Student demo: `Student Alpha` / `student123`
+- Professor demo: `Professor Alpha` / `prof123`
 
 For private local testing only, copy `.env.example` to `.env` and set:
 

@@ -392,7 +392,7 @@ const uiCopy = {
       password: "Password",
       forgot: "Forgot password?",
       demoAdmin: "Private demo admin is enabled from .env.",
-      demoStudent: "Demo student: Amen Jbali / student123",
+      demoStudent: "Demo student: Student Alpha / student123",
       email: "Email",
       accountType: "Account type",
       studentLevel: "Student level",
@@ -606,7 +606,7 @@ const uiCopy = {
       password: "Mot de passe",
       forgot: "Mot de passe oublié ?",
       demoAdmin: "Le compte admin privé est activé via .env.",
-      demoStudent: "Démo étudiant : Amen Jbali / student123",
+      demoStudent: "Démo étudiant : Student Alpha / student123",
       email: "Email",
       accountType: "Type de compte",
       studentLevel: "Niveau étudiant",
@@ -758,7 +758,7 @@ const tourSteps: Array<{ section: SectionId; title: string; text: string }> = [
 ];
 const initialProfessorProfiles: ProfessorProfile[] = [
   {
-    name: "Aymen Louati",
+    name: "Professor Alpha",
     role: "GLSI department contact",
     department: "Sciences Informatiques et Web",
     bio: "Professor profile for official course materials, chapter plans, TD/TP files, and revision notes.",
@@ -784,7 +784,7 @@ const initialProfessorProfiles: ProfessorProfile[] = [
     ],
   },
   {
-    name: "Mootassem Belleh Zoghlami",
+    name: "Professor Beta",
     role: "Computer Engineering department contact",
     department: "Technologie des Réseaux Informatiques",
     bio: "A dedicated profile where network and engineering course documents stay grouped by module.",
@@ -821,7 +821,7 @@ const initialProfessorProfiles: ProfessorProfile[] = [
 const initialStudentPosts: StudentPost[] = [
   {
     id: "post-1",
-    author: "Mayssa Ben Salem",
+    author: "Student Epsilon",
     body: "Anyone revising reseaux tomorrow in the library? I can help with subnetting.",
     time: "Today",
     tag: "Revision",
@@ -831,29 +831,29 @@ const initialStudentPosts: StudentPost[] = [
     shares: 8,
     likedBy: [],
     comments: [
-      { id: "comment-1", author: "Amen Jbali", body: "I am in. Around 14:00?", time: "2h ago" },
-      { id: "comment-2", author: "Nour H.", body: "Please send the room when you confirm.", time: "1h ago" },
+      { id: "comment-1", author: "Student Alpha", body: "I am in. Around 14:00?", time: "2h ago" },
+      { id: "comment-2", author: "Student Delta", body: "Please send the room when you confirm.", time: "1h ago" },
     ],
     moderationStatus: "Approved",
   },
   {
     id: "post-2",
-    author: "Youssef M.",
+    author: "Student Gamma",
     body: "Small tip: for PHP TP, test your database connection before touching the interface.",
     time: "Yesterday",
     tag: "Announcement",
     likes: 41,
     reposts: 7,
     shares: 14,
-    likedBy: ["Amen Jbali"],
+    likedBy: ["Student Alpha"],
     comments: [
-      { id: "comment-3", author: "Rania K.", body: "This saved my TP last week.", time: "Yesterday" },
+      { id: "comment-3", author: "Student Beta", body: "This saved my TP last week.", time: "Yesterday" },
     ],
     moderationStatus: "Approved",
   },
   {
     id: "post-3",
-    author: "Nour H.",
+    author: "Student Delta",
     body: "Lost a black notebook near room 5. Please message me if you found it.",
     time: "This week",
     tag: "Lost & Found",
@@ -869,7 +869,7 @@ const initialStudentPosts: StudentPost[] = [
 
 const demoAdminAccount: StoredAccount = {
   name: "ISI Admin",
-  email: "admin@isikef.tn",
+  email: "admin@example.test",
   password: demoAdminPassword,
   accountType: "Admin",
   verified: true,
@@ -880,19 +880,19 @@ const demoAdminAccount: StoredAccount = {
 
 const demoAccounts: StoredAccount[] = [
   {
-    name: "Amen Jbali",
-    email: "amen@student.isikef.tn",
+    name: "Student Alpha",
+    email: "student.alpha@example.test",
     password: "student123",
     accountType: "Student",
     year: "2nd year",
     verified: true,
-    studentCard: "amen-card.jpg",
+    studentCard: "student-alpha-card.jpg",
     status: "Offline",
     points: 1260,
   },
   {
-    name: "Aymen Louati",
-    email: "aymen.louati@isikef.tn",
+    name: "Professor Alpha",
+    email: "professor.alpha@example.test",
     password: "prof123",
     accountType: "Professor",
     department: "Sciences Informatiques et Web",
@@ -910,22 +910,22 @@ const initialAccounts: StoredAccount[] = [
 const initialAccountRequests: AccountRequest[] = [
   {
     id: "request-1",
-    name: "Rania Khelifi",
-    email: "rania@student.isikef.tn",
+    name: "Student Beta",
+    email: "student.beta@example.test",
     password: "student123",
     accountType: "Student",
     year: "1st year",
-    studentCard: "rania-card.png",
+    studentCard: "student-beta-card.png",
     status: "Pending",
   },
   {
     id: "request-2",
-    name: "Youssef Mansouri",
-    email: "youssef@student.isikef.tn",
+    name: "Student Gamma",
+    email: "student.gamma@example.test",
     password: "student123",
     accountType: "Student",
     year: "2nd year",
-    studentCard: "youssef-card.jpg",
+    studentCard: "student-gamma-card.jpg",
     status: "Pending",
   },
 ];
@@ -1139,8 +1139,8 @@ export default function App() {
     },
   ]);
   const [sentMessages, setSentMessages] = useState<Record<string, string[]>>({
-    "Amen Jbali": ["Asslema Amen, can you send me the BD normalization summary?"],
-    "Mayssa Ben Salem": ["Can we revise subnetting before TP?"],
+    "Student Alpha": ["Asslema Student Alpha, can you send me the BD normalization summary?"],
+    "Student Epsilon": ["Can we revise subnetting before TP?"],
   });
   const [studentPosts, setStudentPosts] = useState<StudentPost[]>(initialStudentPosts);
   const [postDraft, setPostDraft] = useState("");
@@ -2917,7 +2917,7 @@ export default function App() {
               <div className="glass-panel">
                 <label className="search-field">
                   <Search />
-                  <input value={studentQuery} onChange={(event) => setStudentQuery(event.target.value)} placeholder="Search by name or skill: Amen, React, SQL..." />
+                  <input value={studentQuery} onChange={(event) => setStudentQuery(event.target.value)} placeholder="Search by name or skill: Student Alpha, React, SQL..." />
                 </label>
                 <div className="student-list">
                   {filteredStudents.length > 0 ? filteredStudents.map((profile) => {
@@ -3549,8 +3549,8 @@ function AuthModal({
   onSubmit: (payload: AuthSubmitPayload) => boolean;
   copy: UICopy;
 }) {
-  const [name, setName] = useState("Amen Jbali");
-  const [email, setEmail] = useState("amen@student.isikef.tn");
+  const [name, setName] = useState("Student Alpha");
+  const [email, setEmail] = useState("student.alpha@example.test");
   const [password, setPassword] = useState("student123");
   const [accountType, setAccountType] = useState<CreateAccountType>("Student");
   const [year, setYear] = useState("2nd year");
