@@ -2,6 +2,16 @@
 
 ISI Connect is a digital campus web app for ISI Kef students. It brings together student posts, private messages, resources, professor course spaces, AI help, points, notifications, and file organization by year and specialty.
 
+## Screenshots
+
+![Desktop home](./screenshot-desktop.png)
+
+![Mobile home](./screenshot-mobile.png)
+
+![Files section](./screenshot-files.png)
+
+![Students section](./screenshot-students.png)
+
 ## Tech Stack
 
 - React 19
